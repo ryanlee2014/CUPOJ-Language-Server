@@ -1,4 +1,4 @@
 langservers:
     cpp:
             - ccls
-            - "--init={\"cacheDirectory\":\"/path/to/cachedir\",\"cacheFormat\":\"json\",\"index\":{\"onChange\":true,\"trackDependency\":2}}"
+            - "--init={\"cacheDirectory\":\"/tmp/cupoj-language-server/intellisense\",\"cacheFormat\":\"json\",\"index\":{\"onChange\":true,\"trackDependency\":3}}"

@@ -28,7 +28,10 @@ RUN set -xe && \
     cd wsproxy && \
     npm i && \
     npm run build && \
-    rm -rf /ccls
+    rm -rf /ccls && \
+    mkdir -p /tmp/cupoj-language-server/intellisense && \
+    cd /tmp/cupoj-language-server/intellisense && \
+    echo "clang \n%c -std=c11 \n%cpp -std=c++2a" > ./.ccls
 
 # Binds to port 8080
 EXPOSE 17779
